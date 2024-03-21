@@ -16,6 +16,9 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //set icon to window
+    this->setWindowIcon(QIcon(":/icons/icons/calendarNotebook.pro"));
+
     //set pointingHand cursor to radioButtons and pushButtons
     ui->save_pushButton->setCursor(Qt::PointingHandCursor);
     ui->priority_high->setCursor(Qt::PointingHandCursor);
